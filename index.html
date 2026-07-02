@@ -9,13 +9,13 @@
 </head>
 <body>
     <nav>
-        <i class="bi bi-list"></i>
+        <i class="bi bi-list" onclick="showNav()"></i>
     <a href="index.html">
         <b>
         Joy's concept
     </b>
     </a>
-    <div class="group">
+    <div class="group" id="menu">
         <div class="group-1">
             <button>
                 Shop All
@@ -322,5 +322,17 @@
             </p>
         </div>
     </div>
+
+    <script>
+        function showNav(){
+            const nav = document.getElementById("menu")
+
+            if(nav.style.display == "none"){
+                nav.style.display = "flex"
+            }else{
+                nav.style.display = "none"
+            }
+        }
+    </script>
 </body
 </html>
